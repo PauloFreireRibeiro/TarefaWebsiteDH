@@ -24,9 +24,7 @@ body { /* Fonte do documento */
     border: 5px solid red;
 
 }
-.formulario_campo:required{
-    border: 5px solid red;
-}
+
 .formulario_campo::placeholder{
     color: black;
 }
