@@ -1,40 +1,42 @@
-body{
-    margin: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+*{
     font-style: normal;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 0 ;
+    font-family:'Ropa Sans';
 }
-header,main,aside,footer{    
-    border: solid red;
-    
-}
-
+body{
+    margin: 0% ;
+    box-sizing: border-box;
+    padding: 0% ;
+    background-color: black;
+} 
 header{grid-area: cabecalho;}
 main{grid-area: conteudo;}
 aside{grid-area: relacionados;}
 footer{ grid-area: rodape;}
 
-
 .l-app{
+    margin: 0 auto;
     max-width: 600px;
     min-height: 1240px;
     display: grid;
     gap: 25px;
     grid-template-columns: 600px;
-    grid-template-rows: 80px 480px 400px 280px;
+    grid-template-rows: 80px 530px 350px 280px;
     grid-template-areas:
     "cabecalho"
     "conteudo"
     "relacionados"
     "rodape";
+    background-color: #ffffff;
 }
+
 header{
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
 }
 .l-logo{
     position: absolute;
@@ -42,7 +44,7 @@ header{
     height:25px;
     left: 20px;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 32px;
     color: #777777;
 }
@@ -51,7 +53,7 @@ header{
     width: 80px;
     height: 22px;
     left: 140px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 15px;
     color: #AAAAAA;
@@ -60,11 +62,89 @@ header{
     position: absolute;
     width: 30px;
     height: 22px;
-    right: 20px;
+    right: 40px;
     background-color: #ffffff;
 }
+
+main{
+    display: flex;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+   
+}
+.l-banner{
+    position: absolute;
+    width: 600px;
+    height: 240px;
+}
+.l-anuncio_1{
+    position: relative;
+    top: 260px;
+    left: 30px; 
+    width: 545px;
+    height: 130px;
+    background-color:rgba(206, 206, 206, 0.815);
+  
+
+  
+}
+.l-anuncio_2{
+    position: relative;
+    top: 280px;
+    left: 30px;
+    height: 130px;
+    width: 545px;
+    background-color:rgba(206, 206, 206, 0.815);
+    
+    
+}
+
+.l-status,.l-preco,.l-descricao,.l-img{
+    position: absolute;
+}
+
+.l-img{
+    left: -10px;
+    height: 130px;
+}
+#status_a{background-color:rgba(81, 210, 117, 1);
+    ;}
+#status_b{background-color:rgba(220, 151, 48, 1);
+    ;}
+.l-status{
+    left: 240px;
+    border: 0;
+    border-radius:25px;
+    width:70px ;
+    padding: 2px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 100;
+    font-size: 26px
+}
+.l-preco{
+    top: 50px;
+    left: 240px;
+    font-size: 30px;
+    color: #888888;
+  
+}
+.l-descricao{
+    top: -11px;
+    left: 340px;
+    width: 200px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #555555;
+   
+   
+}
+
 aside{
     display: flex;
+    width: 600px;
+    margin: 0 auto;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -73,20 +153,27 @@ aside{
     position: absolute;
     top: 0;
     margin: 0;
-    font-size: 30px;
+    font-size: 28px;
+    font-style: normal;
     color: #888888;
 }
-.l-modelo{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
+.l-img_modelo1{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 600px;
 }
-.l-img_modelo{
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    height: 60px;
+.l-img_modelo2{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 600px;
+}
+.l-img_modelo3{
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 600px;
 }
 
 footer{
@@ -101,8 +188,8 @@ footer{
     top: 50px;
     left: 30px;
     border-radius:15px; 
-    width: 250px;
-    height: 170px;
+    width: 280px;
+    height: 200px;
 }
 .l-endereco{
     position: absolute;
