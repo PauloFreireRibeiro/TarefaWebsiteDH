@@ -21,7 +21,7 @@ footer{ grid-area: rodape;}
     display: grid;
     gap: 25px;
     grid-template-columns: 600px;
-    grid-template-rows: 80px 530px 350px 280px;
+    grid-template-rows: 80px 560px 320px 280px;
     grid-template-areas:
     "cabecalho"
     "conteudo"
@@ -81,23 +81,18 @@ main{
 .l-anuncio_1{
     position: relative;
     top: 260px;
-    left: 30px; 
-    width: 545px;
-    height: 130px;
+    left: 19px; 
+    width: 250px;
+    height: 300px;
     background-color:rgba(206, 206, 206, 0.815);
-  
-
-  
 }
 .l-anuncio_2{
     position: relative;
-    top: 280px;
-    left: 30px;
-    height: 130px;
-    width: 545px;
+    top: -40px;
+    left: 333px ;
+    height:300px;
+    width: 250px;
     background-color:rgba(206, 206, 206, 0.815);
-    
-    
 }
 
 .l-status,.l-preco,.l-descricao,.l-img{
@@ -105,15 +100,15 @@ main{
 }
 
 .l-img{
-    left: -10px;
-    height: 130px;
+    width: 250px;
 }
 #status_a{background-color:rgba(81, 210, 117, 1);
     ;}
 #status_b{background-color:rgba(220, 151, 48, 1);
     ;}
 .l-status{
-    left: 240px;
+    left: 160px;
+    top: 120px;
     border: 0;
     border-radius:25px;
     width:70px ;
@@ -124,21 +119,19 @@ main{
     font-size: 26px
 }
 .l-preco{
-    top: 50px;
-    left: 240px;
+    top: 120px;
+    left: 10px;
     font-size: 30px;
     color: #888888;
   
 }
 .l-descricao{
-    top: -11px;
-    left: 340px;
-    width: 200px;
+    top: 170px;
+    left: 10px;
+    width: 235px;
     font-size: 15px;
     font-weight: 600;
     color: #555555;
-   
-   
 }
 
 aside{
@@ -148,6 +141,7 @@ aside{
     position: relative;
     justify-content: center;
     align-items: center;
+    
 }
 .l-h1{
     position: absolute;
@@ -160,20 +154,21 @@ aside{
 .l-img_modelo1{
     position: absolute;
     top: 50px;
-    left: 0;
-    width: 600px;
+    left: 20px;
+    width: 563px;
 }
 .l-img_modelo2{
     position: absolute;
     top: 150px;
-    left: 0;
-    width: 600px;
+    left: 20px;
+    width: 563px;
 }
 .l-img_modelo3{
     position: absolute;
     top: 250px;
-    left: 0;
-    width: 600px;
+    left: 20px;
+    width: 563px;
+    
 }
 
 footer{
@@ -193,10 +188,10 @@ footer{
 }
 .l-endereco{
     position: absolute;
-    right: 11px;
-    top: 30px;
-    width: 240px;
-    height: 40px;
+    right: 74px;
+    top: 40px;
+    width: 175px;
+    height: 60px;
     font-weight: 200;
     font-size: 15px;
     line-height: 25px;
@@ -205,7 +200,7 @@ footer{
 .l-social{
     position: absolute;
     right: 11px;
-    top: 140px;
+    top: 150px;
     width: 240px;
     height: 20px;
     font-weight: 200;
