@@ -7,40 +7,119 @@
     <title>SHOES</title>
     <link rel="stylesheet" href="">
 </head>
-<body>
-    <header><!-- Cabeçalho da página-->
-       <section><!-- acesso a categorias -->
-        <h2 href="#">TODOS OS PRODUTOS</h2>
-        <h2 href="#">COLEÇÕES</h2>
-        <h2 href="#">OUTLET</h2>
-       </section>
-        <div><img src="" alt=""></div> <!-- Logo -->
-    </header>
-    <article>
-       <img src= alt="">
-    </article>
-    <footer> <!-- Rodapé da página-->
-        <img src="" alt=""><!-- Logo -->
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h3>
-        
-        <h3>
-            categorias
-            sandálias
-            botas
-            tênis
-            oxford
-            coturnos
-        </h3>
+<style>
 
-        <h3>
-            institucional
-            sobre nós
-            perguntas frequentes
-            politica de privacidade
-            rastreamento de pedidos
-            trabalhe conosco
-            contato
-        </h3>
-    </footer>
+    body{
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    div{
+        position: relative;
+        margin: 0 auto;
+        width: 1280px;
+        justify-content: center;
+    }
+    nav{
+        margin: 0 auto;
+        width: 1280px;
+        height: 122px;
+        display: flex;
+        justify-content: center;
+        gap: 30%;
+        position: fixed;
+        background-color: white;
+        z-index: 6;
+        top: 0;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+    li{
+        color: #777777;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .banner{
+        position: absolute;
+        top: 123px;
+    }
+    main{
+        position: relative;
+        top:600px;
+        width: 1280px;
+        height: 600px;
+        align-items: center;
+        justify-content: center;
+    }
+    h1{position: absolute;
+        top: 400px;
+        left: 330px;
+        font-size: 60px;
+        font-weight: 800;
+    }
+    img{display: flex;
+    justify-content: flex-start;}
+</style>
+<body>
+ <div id="boxpai">
+  <nav><img src="img/shoes-logo-2 1.svg" alt="LOGO">
+    <ul>
+        <li>TODOS OS PRODUTOS</li>
+        <li>COLEÇÕES</li>
+        <li>OUTLET</li>
+    </ul>
+   </nav> 
+   <div class="banner"><img src="img/image 13.svg" alt=""></div>
+   <h1>escolha seu estilo</h1>
+   <main>
+    <img src="img/image 7.svg" alt="">
+    <img src="img/image 8.svg" alt="">
+   </main>
+   <article>
+    <h2>30% OFF</h2>
+    <div>
+        <span>
+            <img src="img/image 4.svg" alt="">
+            <p></p>
+        </span>
+        <span>
+            <img src="img/image 5.svg" alt="">
+            <p></p>
+        </span>
+        <span>
+            <img src="img/image 6.svg" alt="">
+            <p></p>
+        </span>
+        <span>
+            <img src="img/image 9.svg" alt="">
+            <p></p>
+        </span>
+    </div>
+   </article>
+   <article>
+        <img src="img/image 12.svg" alt="">
+        <img src="img/image 11.svg" alt="">
+   </article>
+   <footer>
+    <img src="img/shoes-logo-white-3 1.svg" alt="">
+    <div>
+        <p>
+
+        </p>
+    </div>
+    <div>
+        <p>
+
+        </p>
+    </div>
+    <div>
+        <p>
+
+        </p></div>
+   </footer>
+</div>   
 </body>
 </html>
